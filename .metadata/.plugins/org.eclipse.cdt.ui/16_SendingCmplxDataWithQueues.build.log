@@ -1,0 +1,10 @@
+18:22:42 **** Build of configuration Debug for project 16_SendingCmplxDataWithQueues ****
+make -j4 all 
+arm-none-eabi-size   16_SendingCmplxDataWithQueues.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24276	    124	  20676	  45076	   b014	16_SendingCmplxDataWithQueues.elf
+Finished building: default.size.stdout
+ 
+
+18:22:44 Build Finished. 0 errors, 0 warnings. (took 2s.563ms)
+

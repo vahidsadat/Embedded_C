@@ -1,0 +1,10 @@
+18:22:26 **** Build of configuration Debug for project 12_ExecutingTaskPriodically ****
+make -j4 all 
+arm-none-eabi-size   12_ExecutingTaskPriodically.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20264	    124	  20676	  41064	   a068	12_ExecutingTaskPriodically.elf
+Finished building: default.size.stdout
+ 
+
+18:22:29 Build Finished. 0 errors, 0 warnings. (took 2s.431ms)
+

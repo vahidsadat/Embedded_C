@@ -1,0 +1,10 @@
+18:23:36 **** Build of configuration Debug for project 29_EventGroupswithmultiplesetters ****
+make -j4 all 
+arm-none-eabi-size   29_EventGroupswithmultiplesetters.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23716	    128	  20664	  44508	   addc	29_EventGroupswithmultiplesetters.elf
+Finished building: default.size.stdout
+ 
+
+18:23:39 Build Finished. 0 errors, 0 warnings. (took 2s.499ms)
+

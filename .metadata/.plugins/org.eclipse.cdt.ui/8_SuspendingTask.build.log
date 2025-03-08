@@ -1,0 +1,10 @@
+18:24:19 **** Build of configuration Debug for project 8_SuspendingTask ****
+make -j4 all 
+arm-none-eabi-size   8_SuspendingTask.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20296	    124	  20684	  41104	   a090	8_SuspendingTask.elf
+Finished building: default.size.stdout
+ 
+
+18:24:21 Build Finished. 0 errors, 0 warnings. (took 2s.328ms)
+

@@ -1,0 +1,10 @@
+18:24:18 **** Build of configuration Debug for project 7_UART_modular ****
+make -j4 all 
+arm-none-eabi-size   7_UART_modular.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5176	    108	   1580	   6864	   1ad0	7_UART_modular.elf
+Finished building: default.size.stdout
+ 
+
+18:24:19 Build Finished. 0 errors, 0 warnings. (took 891ms)
+

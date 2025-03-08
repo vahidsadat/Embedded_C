@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;19_SomeDrivers/Core/Inc/exti&apos; to &apos;exti.h&apos;" description="Rename resource &apos;exti&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/exti" name="exti.h" stamp="1700563625838" updateReferences="true"/>
+</session>

@@ -1,0 +1,10 @@
+18:23:23 **** Build of configuration Debug for project 25_Interactingwithderivers_uartrx ****
+make -j4 all 
+arm-none-eabi-size   25_Interactingwithderivers_uartrx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20240	    124	  20676	  41040	   a050	25_Interactingwithderivers_uartrx.elf
+Finished building: default.size.stdout
+ 
+
+18:23:25 Build Finished. 0 errors, 0 warnings. (took 2s.435ms)
+

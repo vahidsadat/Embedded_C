@@ -1,0 +1,10 @@
+18:22:51 **** Build of configuration Debug for project 18_Systick_interrupt ****
+make -j4 all 
+arm-none-eabi-size   18_Systick_interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5312	    108	   1580	   7000	   1b58	18_Systick_interrupt.elf
+Finished building: default.size.stdout
+ 
+
+18:22:52 Build Finished. 0 errors, 0 warnings. (took 846ms)
+

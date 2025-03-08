@@ -1,0 +1,10 @@
+18:23:20 **** Build of configuration Debug for project 24_Stoppingthetimer ****
+make -j4 all 
+arm-none-eabi-size   24_Stoppingthetimer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24452	    124	  20692	  45268	   b0d4	24_Stoppingthetimer.elf
+Finished building: default.size.stdout
+ 
+
+18:23:22 Build Finished. 0 errors, 0 warnings. (took 2s.742ms)
+

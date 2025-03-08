@@ -1,0 +1,10 @@
+18:56:23 **** Incremental Build of configuration Debug for project ST7920_in_SPI ****
+make -j4 all 
+arm-none-eabi-size  ST7920_in_SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36724	    468	   2940	  40132	   9cc4	ST7920_in_SPI.elf
+Finished building: default.size.stdout
+ 
+
+18:56:24 Build Finished. 0 errors, 0 warnings. (took 395ms)
+

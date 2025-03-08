@@ -1,0 +1,10 @@
+18:23:46 **** Build of configuration Debug for project 30_SynchingTaskWithEventGroups ****
+make -j4 all 
+arm-none-eabi-size   30_SynchingTaskWithEventGroups.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23868	    124	  20668	  44660	   ae74	30_SynchingTaskWithEventGroups.elf
+Finished building: default.size.stdout
+ 
+
+18:23:49 Build Finished. 0 errors, 0 warnings. (took 2s.417ms)
+

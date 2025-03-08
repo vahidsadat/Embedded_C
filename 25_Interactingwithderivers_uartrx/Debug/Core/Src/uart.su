@@ -1,0 +1,5 @@
+uart.c:5:6:USART2_UART_TX_Init	8	static
+uart.c:21:6:USART2_UART_RX_Init	8	static
+uart.c:38:5:USART2_write	16	static
+uart.c:48:5:USART2_read	4	static
+uart.c:57:5:__io_putchar	16	static

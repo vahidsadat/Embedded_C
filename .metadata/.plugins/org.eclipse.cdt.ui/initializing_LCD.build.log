@@ -1,0 +1,47 @@
+17:25:24 **** Incremental Build of configuration Debug for project initializing_LCD ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F401RETx -DSTM32F4 -DDEBUG -DSTM32F401xE -DUSE_HAL_DRIVE -DHAL_ADC_MODULE_ENABLED -DHAL_SPI_MODULE_ENABLED -DHAL_MODULE_ENABLED -c -I../Inc -I"C:/Users/vahid/Desktop/MYEmbedded/chip_headers/CMSIS/Include" -I"C:/Users/vahid/Desktop/MYEmbedded/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Drivers/STM32F4xx_HAL_Driver/Src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'ST7920_Init':
+../Src/main.c:40:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(10);   // wait for 10ms
+  ^~~~~
+../Src/main.c:46:2: warning: implicit declaration of function 'ST7920_SendCmd'; did you mean 'ST7920_Init'? [-Wimplicit-function-declaration]
+  ST7920_SendCmd(0x30);  // 8bit mode
+  ^~~~~~~~~~~~~~
+  ST7920_Init
+../Src/main.c:47:2: warning: implicit declaration of function 'delayUs' [-Wimplicit-function-declaration]
+  delayUs(110);  //  >100us delay
+  ^~~~~~~
+../Src/main.c: In function 'ST7920_SendString':
+../Src/main.c:110:7: warning: implicit declaration of function 'ST7920_SendData'; did you mean 'ST7920_SendString'? [-Wimplicit-function-declaration]
+       ST7920_SendData(*string++);
+       ^~~~~~~~~~~~~~~
+       ST7920_SendString
+At top level:
+../Src/main.c:69:13: warning: 'SendByteSPI' defined but not used [-Wunused-function]
+ static void SendByteSPI(uint8_t byte)
+             ^~~~~~~~~~~
+arm-none-eabi-g++ -o "initializing_LCD.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vahid\Desktop\MYEmbedded\LCD_initializing\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="initializing_LCD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Src/main.o: In function `ST7920_Init':
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:40: undefined reference to `delay'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:43: undefined reference to `delay'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:46: undefined reference to `ST7920_SendCmd'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:47: undefined reference to `delayUs'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:49: undefined reference to `ST7920_SendCmd'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:50: undefined reference to `delayUs'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:52: undefined reference to `ST7920_SendCmd'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:53: undefined reference to `delayUs'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:55: undefined reference to `ST7920_SendCmd'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:56: undefined reference to `delay'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:59: undefined reference to `ST7920_SendCmd'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:60: undefined reference to `delay'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:62: undefined reference to `ST7920_SendCmd'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:63: undefined reference to `delay'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:65: undefined reference to `ST7920_SendCmd'
+C:/Users/vahid/Desktop/MYEmbedded/LCD_initializing/Debug/../Src/main.c:66: undefined reference to `delay'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:58: initializing_LCD.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+17:25:26 Build Failed. 17 errors, 5 warnings. (took 2s.16ms)
+

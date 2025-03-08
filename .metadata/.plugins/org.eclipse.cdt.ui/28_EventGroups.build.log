@@ -1,0 +1,10 @@
+18:23:33 **** Build of configuration Debug for project 28_EventGroups ****
+make -j4 all 
+arm-none-eabi-size   28_EventGroups.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23952	    124	  20668	  44744	   aec8	28_EventGroups.elf
+Finished building: default.size.stdout
+ 
+
+18:23:36 Build Finished. 0 errors, 0 warnings. (took 2s.640ms)
+

@@ -1,0 +1,10 @@
+18:22:56 **** Build of configuration Debug for project 1_UltraSuonar ****
+make -j4 all 
+arm-none-eabi-size   1_UltraSuonar.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17220	    120	   1792	  19132	   4abc	1_UltraSuonar.elf
+Finished building: default.size.stdout
+ 
+
+18:22:57 Build Finished. 0 errors, 0 warnings. (took 1s.289ms)
+

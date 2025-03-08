@@ -1,0 +1,19 @@
+18:23:49 **** Build of configuration Debug for project 31_TaskNotifications ****
+make -j4 all 
+arm-none-eabi-g++ -o "31_TaskNotifications.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vahid\Desktop\STM32F401\31_TaskNotifications\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="31_TaskNotifications.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: 31_TaskNotifications.elf
+ 
+arm-none-eabi-size   31_TaskNotifications.elf 
+arm-none-eabi-objdump -h -S  31_TaskNotifications.elf  > "31_TaskNotifications.list"
+arm-none-eabi-objcopy  -O binary  31_TaskNotifications.elf  "31_TaskNotifications.bin"
+   text	   data	    bss	    dec	    hex	filename
+  23868	    124	  20668	  44660	   ae74	31_TaskNotifications.elf
+Finished building: default.size.stdout
+ 
+Finished building: 31_TaskNotifications.bin
+ 
+Finished building: 31_TaskNotifications.list
+ 
+
+18:23:53 Build Finished. 0 errors, 0 warnings. (took 3s.866ms)
+

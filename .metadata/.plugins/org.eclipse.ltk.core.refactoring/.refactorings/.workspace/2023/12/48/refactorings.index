@@ -1,0 +1,7 @@
+1701442534513	Rename resource '28_ٍeventsgroup'
+1701445103991	Rename resource '28_ٍEventGroups'
+1701449556470	Delete resource '1_task_Creation'
+1701450437973	Delete resource '1_initializing_LCD12864'
+1701451023137	Delete resource 'initializing_LCD/Inc/i2c.h'
+1701451070707	Delete resource 'initializing_LCD/Src/i2c.c'
+1701555890339	Delete resource 'initializing_LCD/Src/stm32f4xx_it.c'

@@ -1,0 +1,19 @@
+18:23:28 **** Build of configuration Debug for project 27_uartrxInterrup_receivingpacket ****
+make -j4 all 
+arm-none-eabi-g++ -o "27_uartrxInterrup_receivingpacket.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vahid\Desktop\STM32F401\27_uartrxInterrup_receivingpacket\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="27_uartrxInterrup_receivingpacket.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: 27_uartrxInterrup_receivingpacket.elf
+ 
+arm-none-eabi-size   27_uartrxInterrup_receivingpacket.elf 
+arm-none-eabi-objdump -h -S  27_uartrxInterrup_receivingpacket.elf  > "27_uartrxInterrup_receivingpacket.list"
+arm-none-eabi-objcopy  -O binary  27_uartrxInterrup_receivingpacket.elf  "27_uartrxInterrup_receivingpacket.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20304	    124	  20676	  41104	   a090	27_uartrxInterrup_receivingpacket.elf
+Finished building: default.size.stdout
+ 
+Finished building: 27_uartrxInterrup_receivingpacket.bin
+ 
+Finished building: 27_uartrxInterrup_receivingpacket.list
+ 
+
+18:23:33 Build Finished. 0 errors, 0 warnings. (took 4s.577ms)
+

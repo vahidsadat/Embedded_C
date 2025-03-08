@@ -1,0 +1,11 @@
+main.c:24:5:main	16	static
+main.c:45:6:SenderTask1	32	static
+main.c:59:6:SenderTask2	32	static
+main.c:73:6:ReceiverTask	32	static
+main.c:92:5:uart2_write	16	static
+main.c:100:5:__io_putchar	16	static
+main.c:107:6:SystemClock_Config	88	static
+main.c:141:13:MX_USART2_UART_Init	8	static
+main.c:159:13:MX_GPIO_Init	16	static
+main.c:167:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:174:6:Error_Handler	4	static

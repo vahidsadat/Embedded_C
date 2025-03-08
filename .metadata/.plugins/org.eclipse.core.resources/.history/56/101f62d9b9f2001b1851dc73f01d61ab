@@ -1,0 +1,29 @@
+#include "stm32f4xx.h"
+
+//PA5
+
+//AHB1
+
+//Set bit0 RCC_AHB1ENR to 1
+#define GPIOA_EN 		(1U<<0)
+
+//Set bit 10 to 1 and bit 11 to 0 in GPIOA_MODER
+#define MODER_5_OUT		(1U<<10)
+
+//Write 1 to GPIOA_ODR bit5 to set PA5 on and write 0 to set it off.
+#define ODR_5_Set 		(1U<<5)
+#define ODR_5_Reset 	(0U<<5)
+
+#define LED_PIN			(1U<<5)
+
+int main (void)
+{
+	RCC->AHB1ENR |= GPIOA_EN;
+	GPIOA->MODER |= MODER_5_OUT;
+
+	while(1){
+
+		GPIOA->ODR ^=ODR_5_Set;
+		for(int i=0;i<100000;i++){}
+	}
+}

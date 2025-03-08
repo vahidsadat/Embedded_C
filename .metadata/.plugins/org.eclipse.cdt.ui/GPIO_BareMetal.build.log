@@ -1,0 +1,19 @@
+18:24:27 **** Build of configuration Debug for project GPIO_BareMetal ****
+make -j4 all 
+arm-none-eabi-gcc -o "GPIO_BareMetal.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vahid\Desktop\STM32F401\GPIO_BareMetal\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO_BareMetal.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO_BareMetal.elf
+ 
+arm-none-eabi-size   GPIO_BareMetal.elf 
+arm-none-eabi-objdump -h -S  GPIO_BareMetal.elf  > "GPIO_BareMetal.list"
+arm-none-eabi-objcopy  -O binary  GPIO_BareMetal.elf  "GPIO_BareMetal.bin"
+   text	   data	    bss	    dec	    hex	filename
+    900	     12	   1572	   2484	    9b4	GPIO_BareMetal.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPIO_BareMetal.bin
+ 
+Finished building: GPIO_BareMetal.list
+ 
+
+18:24:30 Build Finished. 0 errors, 0 warnings. (took 2s.500ms)
+

@@ -1,0 +1,10 @@
+18:23:25 **** Build of configuration Debug for project 26_Interactingwithderivers_uartrxInterrupt ****
+make -j4 all 
+arm-none-eabi-size   26_Interactingwithderivers_uartrxInterrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21924	    124	  20748	  42796	   a72c	26_Interactingwithderivers_uartrxInterrupt.elf
+Finished building: default.size.stdout
+ 
+
+18:23:28 Build Finished. 0 errors, 0 warnings. (took 2s.909ms)
+

@@ -1,0 +1,10 @@
+18:24:15 **** Build of configuration Debug for project 7_GettingTaskPriority ****
+make -j4 all 
+arm-none-eabi-size   7_GettingTaskPriority.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20392	    124	  20676	  41192	   a0e8	7_GettingTaskPriority.elf
+Finished building: default.size.stdout
+ 
+
+18:24:18 Build Finished. 0 errors, 0 warnings. (took 2s.469ms)
+
